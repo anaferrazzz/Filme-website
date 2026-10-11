@@ -577,7 +577,7 @@ text-shadow:
 }
 
 @media screen and (max-width: 768px) {
-    /* PÁGINA INICIAL NO TELEMÓVEL */
+    
     body.body-home {
         overflow-x: hidden !important;
         height: auto !important;
@@ -593,7 +593,7 @@ text-shadow:
         min-height: auto !important;
     }
 
-    /* Imagem da Beatrix centralizada */
+   
     body.body-home .poster-filme, 
     body.body-home .hero-image {
         width: 260px !important;
@@ -606,7 +606,7 @@ text-shadow:
         filter: drop-shadow(-8px 8px 12px rgba(0, 0, 0, 0.5)) !important;
     }
 
-    /* Título KILL BILL centralizado no telemóvel */
+   
     body.body-home .titulo-killbill {
         text-align: center !important;
         margin-top: 10px !important;
@@ -621,7 +621,7 @@ text-shadow:
         display: block !important;
     }
 
-    /* Footer ajustado */
+    
     footer {
         position: relative !important;
         bottom: auto !important;
@@ -630,7 +630,7 @@ text-shadow:
         padding: 20px 0 !important;
     }
 
-    /* GALERIA EM 3 COLUNAS NO TELEMÓVEL */
+   
     .galeria-grid {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
