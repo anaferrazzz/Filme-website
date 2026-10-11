@@ -576,39 +576,41 @@ text-shadow:
     }
 }
 
-@media (max-width: 768px) {
-    /* 1. CORREÇÃO DA PÁGINA INICIAL NO TELEMÓVEL */
+@media screen and (max-width: 768px) {
+    /* PÁGINA INICIAL NO TELEMÓVEL */
     body.body-home {
         overflow-x: hidden !important;
+        height: auto !important;
     }
 
-    body.body-home .hero-container, 
-    body.body-home main {
+    body.body-home main, 
+    body.body-home .hero-container {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        padding: 20px 10px !important;
+        padding: 30px 15px !important;
         min-height: auto !important;
     }
 
-    /* Imagem da Beatrix ajustada e centralizada */
+    /* Imagem da Beatrix centralizada */
     body.body-home .poster-filme, 
     body.body-home .hero-image {
-        width: 250px !important;
-        max-width: 80% !important;
+        width: 260px !important;
+        max-width: 85% !important;
         position: relative !important;
         top: 0 !important;
         left: 0 !important;
-        margin: 15px auto !important;
+        margin: 20px auto !important;
         display: block !important;
         filter: drop-shadow(-8px 8px 12px rgba(0, 0, 0, 0.5)) !important;
     }
 
-    /* Título Kill Bill ajustado para não transbordar o ecrã */
+    /* Título KILL BILL centralizado no telemóvel */
     body.body-home .titulo-killbill {
         text-align: center !important;
         margin-top: 10px !important;
+        width: 100% !important;
     }
 
     body.body-home .kill, 
@@ -616,9 +618,19 @@ text-shadow:
         font-size: 3.5rem !important;
         margin-right: 0 !important;
         text-align: center !important;
+        display: block !important;
     }
 
-    /* 2. CORREÇÃO DA GALERIA (3 COLUNAS NO TELEMÓVEL) */
+    /* Footer ajustado */
+    footer {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        text-align: center !important;
+        padding: 20px 0 !important;
+    }
+
+    /* GALERIA EM 3 COLUNAS NO TELEMÓVEL */
     .galeria-grid {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
